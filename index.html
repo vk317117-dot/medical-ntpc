@@ -3,16 +3,43 @@
 <head>
   <title>Medical NTPC</title>
 </head>
+
 <body style="text-align:center; font-family:Arial;">
 
-  <h1>Medical NTPC</h1>
+  <!-- Heading -->
+  <h2>Occupational Health Check NTPC (BARH)</h2>
+
+  <!-- Registration Date -->
+  <p><b>Registration Date:</b> <span id="date"></span></p>
+
+  <!-- Logo -->
+  <img src="logo.png" width="200"><br><br>
+
+  <!-- Form Heading -->
   <h2>Worker Registration</h2>
 
-  <input placeholder="Name"><br><br>
+  <!-- Form Fields -->
+  <input placeholder="Agency Name"><br><br>
   <input placeholder="Department"><br><br>
-  <input placeholder="Mobile Number"><br><br>
+  <input placeholder="EIC Name"><br><br>
+  <input placeholder="Supervisor Name"><br><br>
+  <input placeholder="Supervisor Mobile No"><br><br>
+  <input placeholder="Total Workers"><br><br>
 
-  <button>Submit</button>
+  <!-- Submit Button -->
+  <button style="background:green; color:white; padding:10px 20px; border:none;">
+    Submit
+  </button>
+
+  <br><br><br>
+
+  <!-- Helpline -->
+  <p><b>Helpline No:</b> 9876543210</p>
+
+  <!-- Script for Date -->
+  <script>
+    document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+  </script>
 
 </body>
 </html>
